@@ -33,7 +33,8 @@ const SkipCard = ({ skip, isSelected, onSelect }) => {
               } mr-2`}
             />
             <span className="text-gray-300">
-              {skip.allowed_on_road ? "Public roads" : "Private property"}
+              {/* {skip.allowed_on_road ? "Public roads" : "Private property"} */}
+              Public roads
             </span>
           </div>
           <div className="flex items-center">
@@ -43,7 +44,9 @@ const SkipCard = ({ skip, isSelected, onSelect }) => {
               } mr-2`}
             />
             <span className="text-gray-300">
-              {skip.allows_heavy_waste ? "Heavy waste" : "Heavy waste"}
+              {/* {skip.allows_heavy_waste ? "Heavy waste" : "Non Heavy waste"}
+               */}
+              Heavy waste
             </span>
           </div>
         </div>
