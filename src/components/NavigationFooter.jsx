@@ -1,6 +1,8 @@
 import React from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 const NavigationFooter = ({ selectedSkip, onBack, onContinue }) => {
+  if (!selectedSkip) return null;
+
   const calculatePrice = (skip) => {
     if (!skip) return "0.00";
     const basePrice = skip.price_before_vat;
